@@ -22,4 +22,15 @@ def showMainMenu():
     PlayGame()
   elif a == 2:
     showHelp()
-  
+  elif a == 3:
+    showHighScore()
+  elif a == 4:
+    showAbout()
+  elif a == 5
+    print("Thanks for Visiting! Bye.")
+    a = input("Hit Enter to continue.")
+    exit()
+  else:
+    print("Please Enter the correct option number.")
+    a =input("Restart The game and enter the correct OPTION NUMBER.")
+    exit()
