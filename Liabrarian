@@ -1,0 +1,12 @@
+import tkinter as tk
+import tkinter.tix as tix
+#Data specific classes
+class BookInfo:
+  def __init__(self, acc, name, author, *):
+    self.acc = ac
+    self.name = name
+    self.auth = author
+
+#GUI specific functions:
+def initGUI(parent):
+  
