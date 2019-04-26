@@ -100,4 +100,14 @@ class PropertiesDialog:
 def doLogin(parent):
   uname_dialog = EntryDialog(parent, "Enter your user name:")
   #Code to invoke the dialog:
-  
+  parent.wait_window(uname_dialog.top)
+  global ENTRY_DIALOG_INPUT
+  username=ENTRY_DIALOG_INPUT[0]
+  ENTRY_DIALOG_INPUT.clear()
+  del uname_dialog
+  pass_dialog = EntryDialog(parent, "Enter your password:")
+  pswd = ENTRY_DIALOG_INPUT[0]
+  ENTRY_DILAOG_INPUT.clear()
+  del pass_dialog
+  #Validate the username and the password:
+  try:
