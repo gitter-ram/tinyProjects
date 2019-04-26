@@ -110,4 +110,16 @@ def doLogin(parent):
   ENTRY_DILAOG_INPUT.clear()
   del pass_dialog
   #Validate the username and the password:
+  global CONFIG_FILE_PATH
   try:
+    infile = open(CONFIG_FILE_PATH, "r")
+    while (a = infile.readline()) != "</config>":
+      if(a != "<userinfo>"):
+        continue
+      else:
+        ininfo = True
+      if a == "</userinfo>":
+        break
+      if ininfo:
+        dictd = eval(a)
+        if(dictd.
